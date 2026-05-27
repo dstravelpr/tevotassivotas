@@ -1,0 +1,9 @@
+<svg viewBox="0 0 280 305" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vota Boricua">
+  <title>Vota Boricua — La V Boricua</title>
+  <!-- Left arm — Puerto Rico Red -->
+  <polygon points="10,10 96,10 140,290" fill="#CF0A2C"/>
+  <!-- Right arm — Puerto Rico Blue -->
+  <polygon points="270,10 184,10 140,290" fill="#3F76BC"/>
+  <!-- White PR star — superimposed at convergence -->
+  <polygon points="140,220 147,239 167,239 151,251 157,271 140,259 124,271 130,251 113,239 134,239" fill="#FFFFFF"/>
+</svg>

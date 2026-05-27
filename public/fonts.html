@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparación de Fuentes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@900&family=Big+Shoulders+Display:wght@900&family=Oswald:wght@700&family=Anton&family=Barlow+Condensed:wght@900&family=Teko:wght@700&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+  :root { --red: #CF0A2C; --blue: #002868; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #080808; color: white; font-family: sans-serif; }
+
+  .header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #222;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2px;
+    background: #111;
+  }
+
+  .card {
+    background: #0a0a0a;
+    padding: 3rem 2.5rem;
+    border-top: 3px solid transparent;
+  }
+  .card:nth-child(odd) { border-top-color: var(--red); }
+  .card:nth-child(even) { border-top-color: #4B82E8; }
+
+  .font-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+  }
+
+  .font-label span {
+    color: var(--red);
+  }
+
+  .demo-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 0.75rem;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .demo-title {
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+  }
+
+  .demo-title .r { color: var(--red); display: block; }
+  .demo-title .b { color: #4B82E8; display: block; }
+
+  .demo-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 1.25rem;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* FONT SIZES */
+  .f-bebas .demo-title { font-family: 'Bebas Neue', sans-serif; font-size: 5rem; }
+  .f-montserrat .demo-title { font-family: 'Montserrat', sans-serif; font-size: 4rem; font-weight: 900; }
+  .f-big-shoulders .demo-title { font-family: 'Big Shoulders Display', sans-serif; font-size: 5.5rem; font-weight: 900; }
+  .f-oswald .demo-title { font-family: 'Oswald', sans-serif; font-size: 4.5rem; font-weight: 700; }
+  .f-anton .demo-title { font-family: 'Anton', sans-serif; font-size: 4.5rem; }
+  .f-barlow .demo-title { font-family: 'Barlow Condensed', sans-serif; font-size: 5rem; font-weight: 900; }
+  .f-teko .demo-title { font-family: 'Teko', sans-serif; font-size: 5.5rem; font-weight: 700; }
+  .f-blackhan .demo-title { font-family: 'Black Han Sans', sans-serif; font-size: 4rem; }
+
+  /* Button row */
+  .demo-btn-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .demo-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    border: none;
+    cursor: default;
+  }
+  .demo-btn.r { background: var(--red); color: white; }
+  .demo-btn.o { background: transparent; color: white; border: 2px solid white; }
+
+  .f-bebas .demo-btn { font-family: 'Bebas Neue', sans-serif; }
+  .f-montserrat .demo-btn { font-family: 'Montserrat', sans-serif; font-weight: 900; }
+  .f-big-shoulders .demo-btn { font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; }
+  .f-oswald .demo-btn { font-family: 'Oswald', sans-serif; font-weight: 700; }
+  .f-anton .demo-btn { font-family: 'Anton', sans-serif; }
+  .f-barlow .demo-btn { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; }
+  .f-teko .demo-btn { font-family: 'Teko', sans-serif; font-weight: 700; }
+  .f-blackhan .demo-btn { font-family: 'Black Han Sans', sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  Comparación de Tipografías — <span style="color:var(--red)">Te Votas si Votas</span> &amp; Si Votas Te Votas
+</div>
+
+<div class="grid">
+
+  <!-- 1. Bebas Neue (actual) -->
+  <div class="card f-bebas">
+    <div class="font-label">1. Bebas Neue — <span>ACTUAL</span></div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">EL PODER ESTÁ EN TUS MANOS</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Clásico cartel político. Muy condensado, todo en mayúsculas. Gran impacto pero puede sentirse anticuado.</p>
+  </div>
+
+  <!-- 2. Montserrat -->
+  <div class="card f-montserrat">
+    <div class="font-label">2. Montserrat Black — Moderno</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">El poder está en tus manos</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Moderno y limpio. Muy usado en campañas contemporáneas. Funciona en mayúsculas Y mixto — más versátil.</p>
+  </div>
+
+  <!-- 3. Big Shoulders Display -->
+  <div class="card f-big-shoulders">
+    <div class="font-label">3. Big Shoulders Display — Dramático</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">EL PODER ESTÁ EN TUS MANOS</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Extremadamente alto y dramático. Llena la pantalla de forma poderosa. Muy de impacto, muy cinemático.</p>
+  </div>
+
+  <!-- 4. Oswald -->
+  <div class="card f-oswald">
+    <div class="font-label">4. Oswald Bold — Autoridad</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿Te Votas</span>
+      Si Votas?
+      <span class="b">El poder está en tus manos</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Periodístico y con autoridad. Serio sin ser rígido. Funciona muy bien en mixto (mayúsculas/minúsculas).</p>
+  </div>
+
+  <!-- 5. Anton -->
+  <div class="card f-anton">
+    <div class="font-label">5. Anton — Impacto Máximo</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">EL PODER ESTÁ EN TUS MANOS</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Similar a Bebas pero más ancho y legible. Diseñado para titulares de alto impacto. Muy directo.</p>
+  </div>
+
+  <!-- 6. Barlow Condensed -->
+  <div class="card f-barlow">
+    <div class="font-label">6. Barlow Condensed Black — Moderno + Condensado</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">EL PODER ESTÁ EN TUS MANOS</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Lo mejor de dos mundos: condensado como Bebas pero más moderno. Muy limpio y legible incluso en tamaño grande.</p>
+  </div>
+
+  <!-- 7. Teko -->
+  <div class="card f-teko">
+    <div class="font-label">7. Teko Bold — Geométrico</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">EL PODER ESTÁ EN TUS MANOS</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Geométrico y técnico. Evoca modernidad y precisión. Un poco más frío — bueno para el lado informativo.</p>
+  </div>
+
+  <!-- 8. Black Han Sans -->
+  <div class="card f-blackhan">
+    <div class="font-label">8. Black Han Sans — Único y Fuerte</div>
+    <div class="demo-eyebrow">Educación Cívica · Puerto Rico</div>
+    <div class="demo-title">
+      <span class="r">¿TE VOTAS</span>
+      SI VOTAS?
+      <span class="b">EL PODER ESTÁ EN TUS MANOS</span>
+    </div>
+    <div class="demo-btn-row">
+      <div class="demo-btn r">Ver el Impacto</div>
+      <div class="demo-btn o">¡Regístrate!</div>
+    </div>
+    <p class="demo-sub">Muy único y de personalidad fuerte. Más cuadrado y robusto. Se diferencia completamente del resto.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
