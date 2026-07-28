@@ -101,7 +101,7 @@ export default function OfficialsSection() {
   return (
     <section className="section section--gray" id="oficiales">
       <div className="container">
-        <div className="officials-intro">
+        <div className="officials-intro" data-reveal>
           <span className="section__eyebrow">Estructura de Gobierno</span>
           <h2 className="section__title">¿Quién Gobierna Puerto Rico?</h2>
           <p className="section__subtitle">
@@ -111,8 +111,8 @@ export default function OfficialsSection() {
         </div>
 
         <div className="officials-grid">
-          {officials.map((o) => (
-            <div className="official-card" key={o.title}>
+          {officials.map((o, i) => (
+            <div className="official-card" key={o.title} data-reveal style={{ '--reveal-i': i % 3 }}>
               <span className={`official-card__level ${o.levelClass}`}>{o.level}</span>
               <h3 className="official-card__title">{o.title}</h3>
               <p className="official-card__count">{o.count}</p>

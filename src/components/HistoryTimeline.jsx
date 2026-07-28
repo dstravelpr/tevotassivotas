@@ -24,19 +24,21 @@ export default function HistoryTimeline() {
   return (
     <section className="section section--dark" id="historia">
       <div className="container">
-        <div className="timeline-intro">
+        <div className="timeline-intro" data-reveal>
           <span className="section__eyebrow">Historia Política</span>
           <h2 className="section__title">Puerto Rico: La Lucha por el Voto</h2>
           <p className="section__subtitle">
             Durante siglos, los puertorriqueños no podían votar. Hoy que podemos,
             muchos no lo hacen. Conoce la historia que nos trajo hasta aquí.
           </p>
+          <p className="timeline-hint" aria-hidden="true">Desliza para recorrer la historia →</p>
         </div>
 
-        <div className="timeline">
-          {events.map((e) => (
-            <div className="timeline-item" key={e.year}>
+        <div className="timeline" data-line-reveal>
+          {events.map((e, i) => (
+            <div className="timeline-item" key={e.year} style={{ '--reveal-i': i }}>
               <div className="timeline-item__year">{e.year}</div>
+              <div className="timeline-item__rail"><span className="timeline-item__dot" /></div>
               <div className="timeline-item__title">{e.title}</div>
               <p className="timeline-item__desc">{e.desc}</p>
             </div>

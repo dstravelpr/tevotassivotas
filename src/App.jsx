@@ -7,8 +7,10 @@ import HistoryTimeline from './components/HistoryTimeline'
 import RegisterSection from './components/RegisterSection'
 import ShareSection from './components/ShareSection'
 import Footer from './components/Footer'
+import useReveal from './hooks/useReveal'
 
 export default function App() {
+  useReveal()
   return (
     <>
       <Navbar />

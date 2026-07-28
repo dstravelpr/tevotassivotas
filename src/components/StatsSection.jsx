@@ -33,16 +33,18 @@ export default function StatsSection() {
   return (
     <section className="section section--dark" id="impacto">
       <div className="container">
-        <span className="section__eyebrow">Los Números No Mienten</span>
-        <h2 className="section__title">El Costo de No Votar</h2>
-        <p className="section__subtitle">
-          Cuando decides no votar, no te quedas neutral — le cedes tu poder a alguien más.
-          Estos números muestran exactamente lo que está en juego.
-        </p>
+        <div className="section-intro" data-reveal>
+          <span className="section__eyebrow">Los Números No Mienten</span>
+          <h2 className="section__title">El Costo de No Votar</h2>
+          <p className="section__subtitle">
+            Cuando decides no votar, no te quedas neutral — le cedes tu poder a alguien más.
+            Estos números muestran exactamente lo que está en juego.
+          </p>
+        </div>
 
         <div className="stats-grid">
-          {stats.map((s) => (
-            <div key={s.label} className={`stat-card stat-card--${s.color}`}>
+          {stats.map((s, i) => (
+            <div key={s.label} className={`stat-card stat-card--${s.color}`} data-reveal style={{ '--reveal-i': i }}>
               <div className="stat-card__num">
                 {s.numAccent
                   ? <><span className="num-accent">{s.num.slice(0, -1)}</span>{s.num.slice(-1)}</>

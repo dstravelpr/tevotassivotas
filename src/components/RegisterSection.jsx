@@ -1,15 +1,15 @@
 export default function RegisterSection() {
   return (
     <section className="register-section" id="registrate">
-      <h2 className="register-section__title">
+      <h2 className="register-section__title" data-reveal style={{ '--reveal-i': 0 }}>
         ¿ESTÁS<br />REGISTRADO/A<br />PARA VOTAR?
       </h2>
-      <p className="register-section__body">
+      <p className="register-section__body" data-reveal style={{ '--reveal-i': 1 }}>
         La Comisión Estatal de Elecciones (CEE) es el organismo oficial de Puerto Rico
         para el registro de votantes. El proceso es gratuito y toma solo minutos.
         Sin registro, no hay voto.
       </p>
-      <div className="register-actions">
+      <div className="register-actions" data-reveal style={{ '--reveal-i': 2 }}>
         <a
           href="https://www.ceepur.org"
           target="_blank"

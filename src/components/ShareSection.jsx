@@ -20,14 +20,16 @@ export default function ShareSection() {
   return (
     <section className="section section--gray" id="comparte">
       <div className="container">
-        <span className="section__eyebrow">Haz Que Cuente</span>
-        <h2 className="section__title">Comparte con Tu Gente</h2>
-        <p className="section__subtitle">
-          El conocimiento es poder. Comparte esta página con tu familia y amigos.
-          Una conversación puede cambiar todo.
-        </p>
+        <div className="section-intro" data-reveal>
+          <span className="section__eyebrow">Haz Que Cuente</span>
+          <h2 className="section__title">Comparte con Tu Gente</h2>
+          <p className="section__subtitle">
+            El conocimiento es poder. Comparte esta página con tu familia y amigos.
+            Una conversación puede cambiar todo.
+          </p>
+        </div>
 
-        <div className="share-grid">
+        <div className="share-grid" data-reveal>
           <a href={fbUrl} target="_blank" rel="noopener noreferrer" className="share-btn share-btn--fb">
             📘 Compartir en Facebook
           </a>

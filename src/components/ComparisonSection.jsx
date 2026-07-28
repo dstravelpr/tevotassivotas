@@ -19,7 +19,7 @@ const noItems = [
 export default function ComparisonSection() {
   return (
     <section className="section" style={{ padding: 0 }}>
-      <div className="comparison-header" style={{ padding: '4rem 2rem 0' }}>
+      <div className="comparison-header" style={{ padding: '4rem 2rem 0' }} data-reveal>
         <span className="section__eyebrow">La Decisión Más Importante</span>
         <h2 className="section__title">Votas vs. No Votas</h2>
         <p className="section__subtitle">
@@ -28,7 +28,7 @@ export default function ComparisonSection() {
       </div>
 
       <div className="comparison-grid">
-        <div className="comparison-col comparison-col--yes">
+        <div className="comparison-col comparison-col--yes" data-reveal style={{ '--reveal-i': 0 }}>
           <span className="comparison-col__icon">✊</span>
           <h3 className="comparison-col__title">Cuando Votas</h3>
           <p className="comparison-col__subtitle">Ejerces tu poder</p>
@@ -42,7 +42,7 @@ export default function ComparisonSection() {
           </ul>
         </div>
 
-        <div className="comparison-col comparison-col--no">
+        <div className="comparison-col comparison-col--no" data-reveal style={{ '--reveal-i': 1 }}>
           <span className="comparison-col__icon">😶</span>
           <h3 className="comparison-col__title">Cuando No Votas</h3>
           <p className="comparison-col__subtitle">Cedes tu poder</p>
